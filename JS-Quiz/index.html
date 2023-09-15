@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="container">
+        <div class="game">
+            <div class="content">
+                <h1 class="question">Which of these fish is actually a fish?</h1>
+                <div class="answersContainer">
+                    <div class="answer">
+                        <input name="answer" type="radio" id="answer1" value="false">
+                        <label for="answer1">Answer1</label>
+                    </div>
+                </div>
+            </div>
+            <button class="submit">Submit</button>
+        </div>
+        <div class="result">
+            <h1>Congratulations!</h1>
+            <h3 class="correct">Correct Answer: 0</h3>
+            <h3 class="wrong">Wrong Answer: 0</h3>
+            <h3 class="score">Score: -30</h3>
+            <button class="play">Play Again</button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

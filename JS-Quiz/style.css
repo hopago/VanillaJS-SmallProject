@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: #22223b;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    position: relative;
+}
+
+.content {
+    padding: 50px;
+}
+
+.question {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.answer {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333
+}
+
+.submit {
+    background-color: aquamarine;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+}
+
+/* .game {
+    display: none;
+} */
+
+.result {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.correct {
+    color: greenyellow;
+    margin-bottom: 20px;
+}
+
+.wrong {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.play {
+    margin-top: 20px;
+    color: white;
+    background-color: aquamarine;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.result {
+    display: none;
+}
