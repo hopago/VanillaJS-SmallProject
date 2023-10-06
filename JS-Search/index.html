@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Onest:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/72c1373c95.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <script src="./js/main.js" type="module"></script>
+    <title>Search</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="offscreen">Search Me A Wikipedia Powered Search Engine</h1>
+        <section class="searchEntry">
+            <h2 class="offscreen">Search Term Entry</h2>
+            <div class="logo" aria-hidden="true">
+                <span class="blue">S</span>
+                <span class="red">e</span>
+                <span class="yellow">a</span>
+                <span class="blue">r</span>
+                <span class="green">c</span>
+                <span class="red">h</span>
+                <span class="blue">M</span>
+                <span class="yellow">e</span>
+                <span class="red exclaim">!</span>
+            </div>
+            <form id="searchBar" class="searchBar">
+                <label for="search" class="offscreen">Enter a search term or phase</label>
+                <input type="text" autocomplete="off" id="search" />
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button">
+                    <i class="fa-solid fa-magnifying-glass blue"></i>
+                </button>
+            </form>
+        </section>
+        <section class="results">
+            <h2 class="offscreen">Search Results</h2>
+            <div class="statsBar">
+                <div id="stats" class="stats" aria-live="assertive"></div>
+                <div id="searchResults" class="searchResults">
+                    <div class="resultItem">
+                        <div class="resultTitle">
+                            <a href="">Dachshund</a>
+                        </div>
+                        <div class="resultContents">
+                            <div class="resultImage">
+                                <img 
+                                  class="resultImg"
+                                  src="data:image/jpeg;base64,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" 
+                                  alt="Dachshund"
+                                >
+                            </div>
+                            <div class="resultText">
+                                <p class="resultDescription">
+                                    The dachshund (UK: DAKS-and, DASH-, -huund, -huunt or US: DAHKS...)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span aria-hidden="true">&lt;&lt;</span>Powered by <a href="https://www.wikipedia.org"
+                target="_blank">Wikipedia</a>
+            <span aria-hidden="true">&gt;&gt;</span>
+        </p>
+    </footer>
+</body>
+
+</html>
